@@ -1,0 +1,19 @@
+.About{
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    margin:auto;
+    height: auto;
+    text-align: center;
+  }
+  .About h1{
+    font-size: 40px;
+    font-weight: 600;
+  }
+  /* .About{
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    min-height: 100vh;
+    margin: auto;
+    text-align: center;
+    padding-top: 90px;
+   */
