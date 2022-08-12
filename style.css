@@ -4,13 +4,11 @@
   box-sizing: border-box;
 }
 .head{
-  overflow: hidden;
   width: 100%;
   min-height: 100vh;
-  background-image: url(assest/back.png);
+  background-image: linear-gradient(rgba(4,9,30,7),rgba(224, 223, 215, 0.367)),url(assest/back.png);
   background-position: center;
-  background-size:fill;
-  position: relative;
+  background-size: cover;
 }
 .row{
   position: absolute;
@@ -19,13 +17,14 @@
   text-align: center; 
 }
 .homeh1{
-  color: #000000;
+  color: #ffffff;
   position:absolute;
   top: 50%;
   width: 100%;
   text-align: center;
   position: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 2px;
   font-size: 36px;
 }
 .butt_hm{
