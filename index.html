@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akshay's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/83ee6ec839.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> <!-- Link your CSS file -->
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="py-5">
+      <div class="container text-center">
+        <img src="Profile_photo.png" class="rounded-circle img-thumbnail" alt="Profile Picture" width="200">
+        <h2>About Me</h2>
+        <br>
+        <p>I Am Studying as 3rd Year Bachelor of Engineering in Computer Science Engineering(Data Science)</p>
+        <p>Passionate About Data Science as well as Data Engineering.</p>
+      </div>
+    </section>
+    <section id="projects" class="py-5">
+        <div class="container">
+          <h2>Projects</h2>
+          <br>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card text-white bg-primary mb-4">
+                <div class="card-header">Android Application</div>
+                <div class="card-body">
+                  <h5 class="card-title">Vehicle Auction Application</h5>
+                  <p class="card-text">Developed a vehicle auction application enabling users to buy and sell vehicles through an
+                    online auction platform. Implemented features such as User registration, Vehicle listing,
+                    Bidding system.
+                    <br>
+                    <br></p>
+                  <ul class="list-unstyled">
+                    <li><span class="badge bg-secondary">Andorid Studio</span></li>
+                    <li><span class="badge bg-secondary">Google Firebase</span></li>
+                    <li><span class="badge bg-secondary">XML</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card text-white bg-secondary mb-4">
+                <div class="card-header">Web Application</div>
+                <div class="card-body">
+                  <h5 class="card-title">Event Management System</h5>
+                  <p class="card-text">Developed and implemented an efficient event management system that automates and
+                    streamlines various aspects of event planning and execution.
+                    This system includes features such as Registration of Customers,Event Planning and
+                    Scheduling,Venue Management,Budget of the Event.</p>
+                  <ul class="list-unstyled">
+                    <li><span class="badge bg-secondary">Flask</span></li>
+                    <li><span class="badge bg-secondary">MySQL</span></li>
+                    <li><span class="badge bg-secondary">HTML & CSS</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card text-black bg-light mb-4">
+              <div class="card-header">Mobile Application</div>
+              <div class="card-body">
+                <h5 class="card-title">CGPA to Percentage</h5>
+                <p class="card-text">Developed a Android application for calculating cgpa and then convert it to percentage.</p>
+                <a class="btn btn-primary" href="https://github.com/Akshess/Akshess.github.io/blob/main/app-debug.apk" role="button">App Download</a>
+                <ul class="list-unstyled">
+                  <li><span class="badge bg-secondary">Android Studio(Java)</span></li>
+                  <li><span class="badge bg-secondary">XML</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+    <section id="skills" class="py-5">
+      <div class="container">
+        <h2>Skills</h2>
+        <br>
+        <ul class="list-inline">
+          <li class="list-inline-item"><span class="badge bg-dark fs-6">Python</span></li>
+          <li class="list-inline-item"><span class="badge bg-dark fs-6">Java</span></li>
+          <li class="list-inline-item"><span class="badge bg-dark fs-6">SQL</span></li>
+          <li class="list-inline-item"><span class="badge bg-dark fs-6">Data Science</span></li>
+          <li class="list-inline-item"><span class="badge bg-dark fs-6">Machine Learning</span></li>
+          <li class="list-inline-item"><span class="badge bg-dark fs-6">Flask</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2>Contact</h2>
+        <br>
+        <form action="contact-form-handler.php" method="POST">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          <br>
+          <br>
+          <ul class="list-inline social-media">
+            <li class="list-inline-item"><a href="https://github.com/Akshess"><i class="fab fa-github fa-2x"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.linkedin.com/in/akshay-hegde-3b2b36202/"><i class="fab fa-linkedin fa-2x"></i></a></li>
+            <li class="list-inline-item"><a href="https://dribbble.com/akshess"><i class="fab fa-dribbble fa-2x"></i></a></li>
+          </ul>       
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white py-3">
+    <div class="container text-center">
+      <p>&copy; 2023 Akshay's Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-ZXdmJ7QFl70Bu3KBFedC3u0pe+yXknYMXYqFTD9dEgGxMDs85O1Q2ayUuCNlvCzN" crossorigin="anonymous"></script> <!-- Include the Bootstrap JavaScript bundle -->
+</body>
+</html>
