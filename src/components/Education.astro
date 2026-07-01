@@ -1,1 +1,133 @@
+---
+const education = [
+  {
+    type: 'degree',
+    title: 'B.E. Computer Science Engineering (Data Science)',
+    institution: 'Sahyadri College of Engineering and Management',
+    period: '2020 – 2024 · Mangaluru, KA · CGPA: 7.69',
+    detail: 'Data Structures & Algorithms (C, C++, Java), Mathematics for Data Science (SPSS), Data Science & Machine Learning (Python), Artificial Intelligence (Python).',
+    emoji: '🎓',
+  },
+];
 
+const experience = [
+  {
+    role: 'Associate Software Engineer',
+    company: 'Accenture',
+    period: 'Oct 2024 – Present · Bengaluru, KA',
+    emoji: '🏢',
+    color: 'border-purple-500/30 bg-purple-500/5',
+    textColor: 'text-purple-400',
+  },
+  {
+    role: 'Developer Intern',
+    company: 'EvoluteIQ',
+    period: 'Feb 2024 – Apr 2024 · Remote',
+    emoji: '💡',
+    color: 'border-cyan-500/30 bg-cyan-500/5',
+    textColor: 'text-cyan-400',
+  },
+];
+
+const certifications = [
+  {
+    title: 'Azure AI Fundamentals (AI-900)',
+    issuer: 'Microsoft',
+    year: '2024',
+    emoji: '☁️',
+    color: 'border-blue-500/30 bg-blue-500/5',
+    textColor: 'text-blue-400',
+  },
+  {
+    title: 'Databricks AI Fundamentals',
+    issuer: 'Databricks',
+    year: '2024',
+    emoji: '🔶',
+    color: 'border-orange-500/30 bg-orange-500/5',
+    textColor: 'text-orange-400',
+  },
+  {
+    title: 'Neo4j Fundamentals',
+    issuer: 'Neo4j',
+    year: '2024',
+    emoji: '🔵',
+    color: 'border-cyan-500/30 bg-cyan-500/5',
+    textColor: 'text-cyan-400',
+  },
+  {
+    title: 'Astronomer Airflow Certification',
+    issuer: 'Astronomer',
+    year: '2024',
+    emoji: '🚀',
+    color: 'border-purple-500/30 bg-purple-500/5',
+    textColor: 'text-purple-400',
+  },
+];
+---
+
+<section id="education" class="py-28 px-6">
+  <div class="max-w-6xl mx-auto">
+
+    <div class="text-center mb-16 reveal">
+      <p class="text-sm font-semibold text-purple-400 tracking-widest uppercase mb-3">Background</p>
+      <h2 class="text-4xl md:text-5xl font-bold text-white">
+        Education & <span class="gradient-text">Credentials</span>
+      </h2>
+    </div>
+
+    <!-- Education & Experience row -->
+    <div class="grid md:grid-cols-2 gap-10 mb-10">
+
+      <!-- Degree -->
+      <div class="reveal">
+        <h3 class="text-sm font-semibold text-slate-500 uppercase tracking-widest mb-6">Education</h3>
+        <div class="space-y-4">
+          {education.map(edu => (
+            <div class="gradient-border-card rounded-2xl p-6 flex gap-4">
+              <span class="text-3xl flex-shrink-0">{edu.emoji}</span>
+              <div>
+                <p class="text-white font-semibold">{edu.title}</p>
+                <p class="text-purple-400 text-sm mt-0.5">{edu.institution}</p>
+                <p class="text-slate-500 text-xs mt-1">{edu.period}</p>
+                <p class="text-slate-400 text-sm mt-3 leading-relaxed">{edu.detail}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- Experience -->
+      <div class="reveal" style="transition-delay: 0.1s">
+        <h3 class="text-sm font-semibold text-slate-500 uppercase tracking-widest mb-6">Experience</h3>
+        <div class="space-y-3">
+          {experience.map(exp => (
+            <div class={`rounded-xl border p-5 flex items-start gap-4 ${exp.color} transition-all hover:scale-[1.01] duration-200`}>
+              <span class="text-xl flex-shrink-0">{exp.emoji}</span>
+              <div class="min-w-0">
+                <p class="text-white text-sm font-semibold">{exp.role}</p>
+                <p class={`text-sm font-medium mt-0.5 ${exp.textColor}`}>{exp.company}</p>
+                <p class="text-slate-500 text-xs mt-1">{exp.period}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <!-- Certifications full width -->
+    <div class="reveal" style="transition-delay: 0.2s">
+      <h3 class="text-sm font-semibold text-slate-500 uppercase tracking-widest mb-6">Certifications</h3>
+      <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-3">
+        {certifications.map(cert => (
+          <div class={`rounded-xl border p-4 flex items-start gap-3 ${cert.color} transition-all hover:scale-[1.02] duration-200`}>
+            <span class="text-xl flex-shrink-0">{cert.emoji}</span>
+            <div class="min-w-0">
+              <p class="text-white text-xs font-medium leading-snug">{cert.title}</p>
+              <p class={`text-xs mt-1 ${cert.textColor}`}>{cert.issuer} · {cert.year}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
