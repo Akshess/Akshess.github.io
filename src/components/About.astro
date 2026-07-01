@@ -1,1 +1,82 @@
+---
+const stats = [
+  { value: '2+',  label: 'Years in AI/ML'      },
+  { value: '35%', label: 'Latency Reduced'      },
+  { value: '4',   label: 'Certifications'       },
+  { value: '70%', label: 'Manual Effort Saved'  },
+];
+---
+
+<section id="about" class="py-28 px-6">
+  <div class="max-w-6xl mx-auto">
+
+    <div class="grid md:grid-cols-2 gap-16 items-center">
+
+      <!-- Avatar + stats -->
+      <div class="flex flex-col items-center gap-8 reveal">
+        <!-- Avatar placeholder — swap with your real photo -->
+        <div class="relative">
+          <div class="w-52 h-52 rounded-3xl gradient-border-card flex items-center justify-center text-7xl select-none animate-float">
+            🤖
+          </div>
+          <!-- Decorative ring -->
+          <div class="absolute -inset-3 rounded-3xl border border-purple-500/20 -z-10"></div>
+          <div class="absolute -inset-6 rounded-3xl border border-purple-500/10 -z-10"></div>
+        </div>
+
+        <!-- Stats grid -->
+        <div class="grid grid-cols-2 gap-4 w-full max-w-xs">
+          {stats.map(s => (
+            <div class="gradient-border-card rounded-2xl p-4 text-center">
+              <p class="text-3xl font-bold gradient-text">{s.value}</p>
+              <p class="text-xs text-slate-500 mt-1 leading-tight">{s.label}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- Bio -->
+      <div class="reveal" style="transition-delay: 0.15s">
+        <p class="text-sm font-semibold text-purple-400 tracking-widest uppercase mb-3">About me</p>
+        <h2 class="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+          Turning data into<br /><span class="gradient-text">decisions</span>
+        </h2>
+
+        <div class="space-y-4 text-slate-400 text-base leading-relaxed">
+          <p>
+            I'm an Associate Software Engineer at <span class="text-white font-medium">Accenture</span>,
+            where I design and ship LLM-powered systems, RAG pipelines, and intelligent automation that
+            move enterprise clients from prototype to production.
+          </p>
+          <p>
+            My day-to-day involves <span class="text-white font-medium">Azure AI Search</span>,
+            <span class="text-white font-medium">LangChain</span>, and <span class="text-white font-medium">Python</span>
+            — building document-interaction APIs, factual correction layers, session-aware chatbots,
+            and data pipelines that have cut latency by 35% and automated up to 70% of manual workflows.
+          </p>
+          <p>
+            I graduated from Sahyadri College of Engineering (CSE – Data Science, 2024) and hold
+            certifications in Azure AI, Databricks, Neo4j, and Apache Airflow.
+          </p>
+        </div>
+
+        <div class="mt-8 flex gap-4">
+          <a
+            href="#projects"
+            class="px-6 py-2.5 rounded-full bg-purple-600/20 hover:bg-purple-600/40 border border-purple-500/30 text-purple-300 text-sm font-medium transition-all"
+          >
+            See projects →
+          </a>
+          <!-- Replace href with your actual résumé link -->
+          <a
+            href="#"
+            class="px-6 py-2.5 rounded-full border border-slate-700 hover:border-slate-500 text-slate-400 hover:text-white text-sm font-medium transition-all"
+          >
+            Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
